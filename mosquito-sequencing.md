@@ -1,19 +1,19 @@
-Who am I?
+### Who am I?
+
+I'm [Alistair Miles](http://alimanfoo.github.io/about/) and I work for Oxford
+University [Big Data Institute](https://www.bdi.ox.ac.uk/) but am also
+affiliated with the [Wellcome Sanger Institute](https://www.sanger.ac.uk/). I
+lead the malaria vector (mosquito) genomics programme within the [malaria
+genomic epidemiology network](www.malariagen.net), an international network of
+researchers and malaria control professionals developing new technologies based
+on genome sequencing to aid in the effort towards malaria elimination. I also
+have a technical role as Head of Epidemiological Informatics for the [Centre
+for Genomics and Global Health](http://www.cggh.org/), which means I have some
+oversight and responsibility for computing and software architecture and
+direction within our teams at Oxford and Sanger.
 
 
-Alistair Miles, work for Oxford University Big Data Institute but also
-affiliated with Wellcome Sanger Institute. I lead the malaria vector (mosquito)
-genomics programme within the malaria genomic epidemiology network
-(www.malariagen.net), an international network of researchers and malaria
-control professionals developing new technologies based on genome sequencing to
-aid in the effort towards malaria elimination. I also have a technical role as
-Head of Epidemiological Informatics for the Centre for Genomics and Global
-Health, which means I have some oversight and responsibility for computing and
-software architecture and direction within our teams at Oxford and Sanger.
-
-
-What problem am I trying to solve?
-
+### What problem am I trying to solve?
 
 Malaria is still a major cause of mortality, particularly in sub-Saharan
 Africa. Research has shown that the best way to reduce malaria is to control
@@ -24,109 +24,104 @@ surveillance/monitoring are also needed to help inform and adapt control
 strategies to respond to mosquito evolution. We have established a project to
 perform an initial survey of mosquito genetic diversity, by sequencing whole
 genomes of approximately 3,000 mosquitoes collected from field sites across 18
-African countries (The Anopheles gambiae 1000 Genomes Project -
+African countries, [The Anopheles gambiae 1000 Genomes Project](
 www.malariagen.net/ag1000g). We are currently working to scale up our
 sequencing operations to be able to sequence ~10,000 mosquitoes per year, and
 to integrate genome sequencing into regular mosquito monitoring programmes
 across Africa and Southeast Asia.
 
 
-How does Dask help?
-
+### How does Dask help?
 
 Whole genome sequence data is a relatively large scale data resource, requiring
 specialised processing and analysis to extract key information, e.g.,
 identifying genes involved in the evolution of insecticide resistance. We use
 conventional bioinformatic approaches for the initial phases of data processing
 (alignment, variant calling, phasing), however beyond that point we switch to
-interactive and exploratory analysis using Jupyter notebooks. Making
-interactive analysis of large-scale data is obviously a challenge, because
-inefficient code and/or use of computational resources vastly increases the
-time taken for any computation, destroying the ability of an analyst to explore
-many different possibilities within a dataset. Dask helps by providing an
-easy-to-use framework for parallelising computations, either across multiple
+interactive and exploratory analysis using Jupyter notebooks.
+
+Making interactive analysis of large-scale data is obviously a challenge,
+because inefficient code and/or use of computational resources vastly increases
+the time taken for any computation, destroying the ability of an analyst to
+explore many different possibilities within a dataset. Dask helps by providing
+an easy-to-use framework for parallelising computations, either across multiple
 cores on a single workstation, or across multiple nodes in a cluster. We have
-built a software package called scikit-allel to help with our genetic analyses,
-and use Dask within that package to parallelise a number of commonly used
-computations.
+built a software package called
+[scikit-allel](http://scikit-allel.readthedocs.io/en/latest/)  to help with our
+genetic analyses, and use Dask within that package to parallelise a number of
+commonly used computations.
 
 
-Why did you choose Dask?
-
+### Why did you choose Dask?
 
 Normally the transition from a serial (i.e., single-core) implementation of any
 given computation to a parallel (multi-core) implementation requires the code
-to be completely rewritten, because parallel frameworks offer a completely
-different API, and managing complex parallel workflows is a significant
-challenge. Dask was appealing because it provides a familiar API, with the
-dask.array package following the numpy API (which we were already using)
-relatively closely. Dask also handles all the complexity of constructing and
-running complex, multi-step computational workflows. Finally, Dask offers the
-flexibility to initially parallelise over multiple cores in a single computer
-via multi-threading, or without changing any code (except for a couple of lines
-of setup) to run on a multi-node cluster. Thus computations can be scaled up or
-down with great convenience. Initially we were focused on making effective use
-of multiple threads for working on a local computer, now as data is growing we
+to be completely rewritten, because parallel frameworks usually offer a
+completely different API, and managing complex parallel workflows is a
+significant challenge.
+
+Originally Dask was appealing because it provided a familiar API,
+with the dask.array package following the numpy API (which we were already
+using) relatively closely. Dask also handled all the complexity of constructing
+and running complex, multi-step computational workflows.
+
+Today, we're also interested in Dask's offered flexibility to initially
+parallelise over multiple cores in a single computer via multi-threading, and
+then switch to running on a multi-node cluster with relatively little change in
+our code. Thus computations can be scaled up or down with great convenience.
+When we first started using Dask we were focused on making effective use of
+multiple threads for working on a single computer, now as data is growing we
 are moving data and computation into a cloud setting and looking to make use of
-Dask via kubernetes.
+Dask via Kubernetes.
 
 
-Pain points?
+### Pain points?
 
-
-Initially when using Dask we hit a few bugs and some of the error messages
-generated by Dask were very cryptic, so debugging some problems was hard.
-However both the stability of the code base and the user documentation and
-error messages have improved a lot recently, and the sustained investment in
-Dask is clearly adding a lot of value for users.
-
+Initially when we started using Dask in 2015 we hit a few bugs and some of the
+error messages generated by Dask were very cryptic, so debugging some problems
+was hard.  However the stability of the code base, the user documentation, and
+the error messages have improved a lot recently, and the sustained investment
+in Dask is clearly adding a lot of value for users.
 
 It is still difficult to think about how to code up parallel operations over
 multidimensional arrays where one or more dimensions are dropped by the
 function being mapped over the data, but there is some inherent complexity
 there so probably not much Dask can do to help.
 
-
 The Dask code base itself is tidy and consistent but quite hard to get into to
 understand and debug issues. Again Dask is handling a lot of inherent
 complexity so maybe not much can be done.
 
 
-Technology around Dask?
+### Technology around Dask?
 
 
 We are currently working on deploying both JupyterHub and Dask on top of
-kubernetes in the cloud, following the approach taken in the Pangeo project. We
-use Dask primarily through the scikit-allel package. We also use Dask primarily
-with the Zarr array storage library (in fact the original motivation for
-writing Zarr was to provide a storage library that enabled Dask to efficiently
-parallelise I/O bound computations).
+Kubernetes in the cloud, following the approach taken in the [Pangeo
+project](http://pangeo-data.org/). We use Dask primarily through the
+scikit-allel package. We also use Dask primarily with the
+[Zarr](http://zarr.readthedocs.io/en/stable/) array storage library (in fact
+the original motivation for writing Zarr was to provide a storage library that
+enabled Dask to efficiently parallelise I/O bound computations).
 
 
-Interesting in expanding to a blog post?
 
-
-Yes happy to.
-
-
-Anything else to know?
-
+### Anything else to know?
 
 Our analysis code is still quite heterogeneous, with some code making use of a
 bespoke approach to out-of-core computing which we developed prior to being
 aware of Dask, and the remainder using Dask. This is just a legacy of timing,
 with some work having started prior to knowing about Dask. With the stability
-and maturity of Dask now I am very happy to push towards full adoption. One
-cognitive shift that this requires is for users to get used to lazy (deferred)
-computation. This can be a stumbling block to start with, but is worth the
-effort of learning because it gives the user the ability to run larger
-computations. So I have been thinking about writing a blog post to communicate
-the message that we are moving towards adopting Dask wherever possible, and to
-give an introduction to the lazy coding style, with examples from our domain
-(population genomics). There are also still quite a few functions in
-scikit-allel that could be parallelised via Dask but haven’t yet been, so I
-still have an aspiration to work on that. Not sure when I’ll get to these, but
-hopefully conveys the intention to adopt Dask more widely and also help train
-people in our immediate community to use it.
+and maturity of Dask now I am very happy to push towards full adoption.
 
-
+One cognitive shift that this requires is for users to get used to lazy
+(deferred) computation. This can be a stumbling block to start with, but is
+worth the effort of learning because it gives the user the ability to run
+larger computations. So I have been thinking about writing a blog post to
+communicate the message that we are moving towards adopting Dask wherever
+possible, and to give an introduction to the lazy coding style, with examples
+from our domain (population genomics). There are also still quite a few
+functions in scikit-allel that could be parallelised via Dask but haven’t yet
+been, so I still have an aspiration to work on that. Not sure when I’ll get to
+these, but hopefully conveys the intention to adopt Dask more widely and also
+help train people in our immediate community to use it.
