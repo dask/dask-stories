@@ -23,6 +23,8 @@ patterns/volumes in a metro area. Our process has three main steps:
     these models and combine the resulting into activities into a single
     model of all the activity in a region.
 
+For more information see our blogpost [Introducing Replica: A Next-Generation Urban Planning Tool](https://medium.com/sidewalk-talk/introducing-replica-a-next-generation-urban-planning-tool-1b7425222e9e).
+
 
 ### How Dask Helps
 
