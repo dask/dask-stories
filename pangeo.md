@@ -7,14 +7,12 @@ professor at [Columbia University](http://columbia.edu) /
 [Lamont Doherty Earth Observatory](http://ldeo.columbia.edu).
 
 I am a founding member of the [Pangeo Project](http://pangeo-data.org), an
-initiative aimed at coordinating and supporting the development of open
-source software for the analysis of very large geoscientific datasets such
-as satellite observations or climate simulation outputs. Dask has a direct
-role in Pangeo via Matt Rocklin and Anaconda's participation in a
-National Science Foundation award
-([NSF Grant 1740648](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1740648&HistoricalAwards=false))
-which supports some of the Pangeo work. I am the principal investigator for
-that award.
+initiative aimed at coordinating and supporting the development of open source
+software for the analysis of very large geoscientific datasets such as
+satellite observations or climate simulation outputs.  Pangeo is funded by
+[National Science Foundation Grant
+1740648](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1740648&HistoricalAwards=false),
+of which I am the principal investigator.
 
 ## What Problem are We Trying to Solve?
 
@@ -43,7 +41,7 @@ This workflow is not feasible or efficient with multi-terabyte datasets, and it
 is impossible with petabyte-scale datasets. The fundamental problem we are
 trying to solve in Pangeo is **how do we maintain the ability to perform
 rapid, interactive analysis in the face of extremely large datasets?**
-Dask is an essential part of our solution. 
+Dask is an essential part of our solution.
 
 ## How Dask Helps
 
@@ -54,17 +52,17 @@ The Xarray data model is explicitly inspired by the Common Data Model format
 widely used in geosciences. Xarray has incorporated dask from very early in its
 development, leading to close integration between these packages.
 
-Pangeo provides configurations for deploying Jupyter, Xarray and Dask on 
+Pangeo provides configurations for deploying Jupyter, Xarray and Dask on
 high-performance computing clusters and cloud platforms. On these platforms,
 our users load data lazily using xarray from a variety of different storage
 formats and perform analysis inside Jupyter notebooks. Working closely with
 the Dask development team, we have tried to simplify the process of launching
-Dask clusters interactively by using packages such as 
+Dask clusters interactively by using packages such as
 [dask-kubernetes](https://github.com/dask/dask-kubernetes) and
 [dask-jobqueue](https://github.com/dask/dask-jobqueue).
 Users employ those packages to interactively launch their own Dask clusters
 across many nodes of the compute system. Dask then automatically parallelizes
-the xarray-based computations without users having to write much specialized 
+the xarray-based computations without users having to write much specialized
 parallel code. Users appreciate the Dask dashboard, which provides a visual
 indication of the progress and efficiency of their ongoing analysis. When
 everything is working well, Dask is largely transparent to the user.
@@ -89,11 +87,11 @@ fall back on the sort of loop-based iteration over large datasets that we had
 to do pre-Dask. All of this undermines the interactive experience we are trying
 to achieve.
 
-However, the first year of this project had made me optimistic about the future.
+However, the first year of this project has made me optimistic about the future.
 I think the interaction between Pangeo users and Dask developers has been
 pretty successful. Our use cases have helped identify several performance
 bottlenecks that have been fixed at the Dask level. If this trend can continue,
-I'm confident we will be able to reach our desired scale and speed.
+I'm confident we will be able to reach our desired scale (petabytes) and speed.
 
 A broader issue relates to onboarding of new users. While I said above that
 Dask operates transparently to the users, this is not always the case. Users
@@ -104,9 +102,11 @@ with this.
 
 ## Technology around Dask
 
-Xarray is the main way we interact with Dask. We use the `dask-jobqueque` and
-`dask-kubernetes` schedulers heavily. We use [zarr](http://zarr.readthedocs.io)
-extensively for storage, especially on the cloud, where we also employ
-`gcsfs` and `s3fs` to interface with cloud storage.
+[Xarray](https://xarray.pydata.org) is the main way we interact with Dask. We use the
+[`dask-jobqueque`](https://dask-jobqueue.readthedocs.io) and
+[`dask-kubernetes`](https://dask-kubernetes.readthedocs.io) projects heavily.
 
-
+We also use [Zarr](http://zarr.readthedocs.io) extensively for storage,
+especially on the cloud, where we also employ
+[`gcsfs`](https://gcsfs.readthedocs.io) and
+[`s3fs`](https://s3fs.readthedocs.io) to interface with cloud storage.
