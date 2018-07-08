@@ -1,4 +1,8 @@
-### Who am I?
+Full Spectrum
+=============
+
+Who am I?
+---------
 
 My name is [Hussain Sultan](https://www.linkedin.com/in/hussainsultan/).
 I am a partner at [Full Spectrum
@@ -7,7 +11,8 @@ analytics software within banks for the sake of equitable and profitable
 decision making.
 
 
-### What problem am I trying to solve?
+What problem am I trying to solve?
+----------------------------------
 
 Lending businesses create and manage valuations and cashflow models that output
 the profitability expectations for customer segments. These models are complex
@@ -15,7 +20,8 @@ because they form a network of equations that need to be scored efficiently and
 keep track of inputs/outputs at scale.
 
 
-### How Dask helps
+How Dask helps
+--------------
 
 Dask is instrumental in my work for creating efficient cashflow model
 management systems and general data science enablement on data lakes.
@@ -26,7 +32,8 @@ interface) and provides a good developer experience for building
 scoring/gamification/model tracking applications.
 
 
-### Why I chose Dask originally
+Why I chose Dask originally
+---------------------------
 
 I chose dask for three reasons:
 
@@ -36,7 +43,8 @@ I chose dask for three reasons:
 3.  It is easy to scale my team with Python programmers
 
 
-### Some of the pain points of using Dask in our problem
+Some of the pain points of using Dask in our problem
+----------------------------------------------------
 
 It's hard to get organization buy-in to adopt an open-source technology without
 vendored support and enterprise SLAs.
@@ -47,7 +55,8 @@ enterprise hadoop set-up and encryption requirements).  These changes have
 since been upstreamed though, and so things are easier now.
 
 
-### Some of the technology that we use around Dask
+Some of the technology that we use around Dask
+----------------------------------------------
 
 We deployed on generic internal server with Jenkins scheduling a Jupyter
 notebook to execute.  We built everything out using our internal analytics

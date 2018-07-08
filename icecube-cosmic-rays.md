@@ -1,4 +1,8 @@
-### Who am I?
+Cosmic Ray detection at Ice Cube
+================================
+
+Who am I?
+---------
 
 I'm [James Bourbeau](https://github.com/jrbourbeau), I'm a graduate student in
 the Physics department at the University of Wisconsin&mdash;Madison. I work at
@@ -6,7 +10,8 @@ the [IceCube South Pole Neutrino Observatory](https://icecube.wisc.edu/)
 studying the cosmic-ray energy spectrum.
 
 
-### What problem am I trying to solve?
+What problem am I trying to solve?
+----------------------------------
 
 Cosmic rays are energetic particles that originate from outer space. While they
 have been studied since the early 1900s, the sources of high-energy cosmic rays
@@ -21,7 +26,8 @@ correct for inherit detector biases and the finite resolution of our
 reconstructions.
 
 
-### How Dask Helps
+How Dask Helps us
+-----------------
 
 I originally chose to use Dask because of the
 [Dask Array](http://dask.pydata.org/en/latest/array.html) and
@@ -48,7 +54,8 @@ collaboration with shared computing resources, it's great to be able to
 monitor how many resources I'm using and scale back or scale up accordingly.
 
 
-### Some of the pain points of using Dask for your problem
+Pain points of using Dask
+-------------------------
 
 There were two main pain points I encountered when first using Dask:
 
@@ -61,7 +68,8 @@ documentation for Dask is quite good and I was able to get over this initial
 learning curve.
 
 
-### Some of the technology that we use around Dask
+Technology that we use around Dask
+----------------------------------
 
 We store our data in HDF files, which Dask has nice read and write support
 for. We also use several other Python data stack tools like Jupyter,

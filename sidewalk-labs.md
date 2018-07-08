@@ -1,10 +1,15 @@
-### Who am I?
+Sidewalk Labs
+=============
+
+Who am I?
+---------
 
 I'm [Brett Naul](https://github.com/bnaul).
 I work at [Sidewalk Labs](https://www.sidewalklabs.com/).
 
 
-### What problem am I trying to solve?
+What problem am I trying to solve?
+----------------------------------
 
 My team @ Sidewalk ("Model Lab") uses machine learning models to study human
 travel behavior in cities and produce high-fidelity simulations of the travel
@@ -26,7 +31,8 @@ patterns/volumes in a metro area. Our process has three main steps:
 For more information see our blogpost [Introducing Replica: A Next-Generation Urban Planning Tool](https://medium.com/sidewalk-talk/introducing-replica-a-next-generation-urban-planning-tool-1b7425222e9e).
 
 
-### How Dask Helps
+How Dask Helps
+--------------
 
 Generating activities for millions of synthetic individuals is extremely
 computationally intensive; even with for example, a 96 core instance,
@@ -36,7 +42,8 @@ hundreds/thousands of cores across many workers with Dask let us accomplish our
 goal.
 
 
-### Why we chose Dask originally, and how these reasons have changed over time.
+Why we chose Dask originally, and how these reasons have changed over time
+--------------------------------------------------------------------------
 
 Our code consists of a mixture of legacy research-quality code and newer
 production-quality code (mostly Python). Before I started we were using Google
@@ -51,7 +58,8 @@ hybrid infrastructure engineer/data scientist, having all of our models in
 Python makes it easy to experiment and debug statistical issues.
 
 
-### Some of the pain points of using Dask for our problem
+Some of the pain points of using Dask for our problem
+-----------------------------------------------------
 
 There is lots of special dask knowledge that only I possess, for example:
 
@@ -85,7 +93,8 @@ There is lots of special dask knowledge that only I possess, for example:
     idea how to interpret)
 
 
-### Some of the technology that we use around Dask
+Some of the technology that we use around Dask
+----------------------------------------------
 
 -   Google Kubernetes Engine: lots of worker instances (usually 16 cores each), 1
     scheduler, 1 job runner client (plus some other microservices)
