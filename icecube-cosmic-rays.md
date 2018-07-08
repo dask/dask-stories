@@ -5,7 +5,7 @@ Who am I?
 ---------
 
 I'm [James Bourbeau](https://github.com/jrbourbeau), I'm a graduate student in
-the Physics department at the University of Wisconsin&mdash;Madison. I work at
+the Physics department at the University of Wisconsin at Madison. I work at
 the [IceCube South Pole Neutrino Observatory](https://icecube.wisc.edu/)
 studying the cosmic-ray energy spectrum.
 
