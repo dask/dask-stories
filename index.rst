@@ -10,6 +10,7 @@ This page shares stories from other Dask users.
    mosquito-sequencing.md
    fullspectrum.md
    icecube-cosmic-rays.md
+   pangeo.md
 
 Contributing
 ------------
