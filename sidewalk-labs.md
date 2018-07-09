@@ -1,5 +1,5 @@
-Sidewalk Labs
-=============
+Sidewalk Labs: Civic Modeling
+=============================
 
 Who am I?
 ---------

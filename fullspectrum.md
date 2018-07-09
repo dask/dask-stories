@@ -1,5 +1,5 @@
-Full Spectrum
-=============
+Full Spectrum: Credit and Banking
+=================================
 
 Who am I?
 ---------

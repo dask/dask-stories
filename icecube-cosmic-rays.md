@@ -1,5 +1,5 @@
-Cosmic Ray detection at Ice Cube
-================================
+Ice Cube: Detecting Cosmic Rays
+===============================
 
 Who am I?
 ---------
