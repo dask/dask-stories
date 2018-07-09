@@ -1,6 +1,8 @@
-# Pangeo Dask Story
+Pangeo: Earth Science
+=====================
 
-## Who Am I?
+Who Am I?
+---------
 
 I am [Ryan Abernathey](http://rabernat.github.io), a physical oceanographer and
 professor at [Columbia University](http://columbia.edu) /
@@ -14,7 +16,8 @@ satellite observations or climate simulation outputs.  Pangeo is funded by
 1740648](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1740648&HistoricalAwards=false),
 of which I am the principal investigator.
 
-## What Problem are We Trying to Solve?
+What Problem are We Trying to Solve?
+------------------------------------
 
 Many oceanographic and atmospheric science datasets consist of multi-dimensional
 arrays of numerical data, such as temperature sampled on a regular latitude,
@@ -43,7 +46,8 @@ trying to solve in Pangeo is **how do we maintain the ability to perform
 rapid, interactive analysis in the face of extremely large datasets?**
 Dask is an essential part of our solution.
 
-## How Dask Helps
+How Dask Helps
+--------------
 
 Our large multi-dimensional arrays map very well to Dask's `array` model. Our
 users tend to interact with Dask via [Xarray](http://xarray.pydata.org), which
@@ -67,7 +71,8 @@ parallel code. Users appreciate the Dask dashboard, which provides a visual
 indication of the progress and efficiency of their ongoing analysis. When
 everything is working well, Dask is largely transparent to the user.
 
-## Why We Chose Dask Originally
+Why We Chose Dask Originally
+----------------------------
 
 Pangeo emerged from the Xarray development group, so Dask was a natural choice.
 Beyond this, Dask's flexibility is a good fit for our applications; as
@@ -76,7 +81,8 @@ types of analysis. We need a parallel computing engine which does not strongly
 constrain the type of computations that can be performed nor require the user
 to engage with the details of parallelization.
 
-## Pain Points
+Pain Points
+-----------
 
 Dask's flexibility comes with some overhead.
 I have the impression that the size of the graphs our users generate, which
@@ -100,7 +106,8 @@ the delayed-evaluation paradigm. It can be a challenge to translate legacy code
 into a Dask-friendly format. Some sort of "cheat sheet" might be able to help
 with this.
 
-## Technology around Dask
+Technology around Dask
+----------------------
 
 [Xarray](https://xarray.pydata.org) is the main way we interact with Dask. We use the
 [`dask-jobqueque`](https://dask-jobqueue.readthedocs.io) and
