@@ -11,6 +11,7 @@ This page shares stories from other Dask users.
    fullspectrum.md
    icecube-cosmic-rays.md
    pangeo.md
+   hydrologic-modeling.md
 
 Contributing
 ------------
