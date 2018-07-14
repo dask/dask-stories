@@ -1,5 +1,5 @@
-Ice Cube: Detecting Cosmic Rays
-===============================
+IceCube: Detecting Cosmic Rays
+==============================
 
 Who am I?
 ---------
