@@ -6,12 +6,12 @@ Who am I?
 
 I am [Sameer Lalwani](https://www.linkedin.com/in/lalwanisameer/), and I specialize in modeling wireless networks. 
 
-We use these models to help operators with their technology decisions by building Digital Twins of their Networks. These models are used to quantify the impact of technology decisions on network KPI & Economics.
+We use these models to help operators with their technology decisions by building Digital Twins of their Networks. These models are used to quantify the impact of technology on user experience, network KPI & Economics.
 
 The Problem I'm trying to solve
 -------------------------------
 
-There are always new technologies which vendors would like operators to deploy. There are a lot of decision operators need to make before they can make a decision on deploying new technology.
+There are always new technologies which vendors would like operators to deploy. Operators face a lot of uncertainty that whenever they have a make a decisions about a new technology. These models help reduce the uncertainty and allow Senior Management to gain Actionable Insights. 
 
 For example currently we are in the middle of a 4G to 5G transition and some of the decisions that operators need to make are given below.
 
