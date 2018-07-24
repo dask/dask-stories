@@ -12,7 +12,8 @@ We use these models to help operators with their technology decisions by buildin
 The problem I'm trying to solve
 -------------------------------
 
-There are always new technologies which vendors would like operators to deploy. Operators face a lot of uncertainty whenever they have to make a decisions about a new technology. These models help reduce uncertainty and allow senior management to gain actionable insights.
+Operators face a lot of uncertainty whenever they have to make a decision about a new technology. Their networks are comlex with lots of Bands and sites which are already deployed. They need to understand the implications of bringing in a new technology in this mix.
+These models help reduce the uncertainty that management faces while giving them actionable insights about their network.
 
 For example currently we are in the middle of a 4G to 5G transition and some of the decisions that operators need to make are given below:
 
