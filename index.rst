@@ -12,6 +12,7 @@ This page shares stories from other Dask users.
    icecube-cosmic-rays.md
    pangeo.md
    hydrologic-modeling.md
+   network-modeling.md
 
 Contributing
 ------------
