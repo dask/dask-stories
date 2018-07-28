@@ -34,10 +34,11 @@ we had to use a p2.xlarge Amazon EC2 instance. It is the only instance
 to have exactly one GPU large and fast enough for our models, and be somewhat available
 on the spot instance market.
 
-Any one combination of network, algorithm and model took 1 hour to complete.
-That meant in serial it would take 24 hours to complete. However, Amazon
-has constraints for our EC2 instance of choice, and any cluster could only
-be launched for 6 hours at a time and is (more or less) limited to 16 machines.
+Any one combination of network, algorithm and model took 1 hour to complete,
+so in serial this tuning would take 48 hours to complete. However, Amazon
+has constraints for our EC2 instance of choice: any p2.xlarge cluster is
+automatically shutdown after 6 hours and the cluster size is
+practically limited to 16 machines.
 
 I eventually got around these constraints with Dask, though the results
 aren't used in our paper,
