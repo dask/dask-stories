@@ -3,7 +3,8 @@
 ## Who am I?
 
 I am [Scott Sievert], a graduate student at the University of Wisconsin–Madison
-studying distributed machine learning.
+studying distributed machine learning. I study how to train deep neural nets
+more quickly.
 
 ## What problem am I trying to solve?
 Communication and computation of results are involved in distributed or
