@@ -67,18 +67,17 @@ discovering the right techniques and methods.
 
 ## Pain points of using Dask
 
-* Managing the cluster. I wanted to cleanly seperate IPs,
-  and only run Dask workers on certain machines and let
-  the PyTorch cluster management solution do the rest.
+* Trying to manage sets of PyTorch clusters with Dask.
+  I needed this to be dynamic because of the 6 hours time
+  limits.
   
-This only took an afternoon after I learned Dask could launch
-tasks from tasks.
+I don't think this is a pain point of using Dask. I think
+the fact that it is a pain point is a feature of  Dask. This
+problem is native to my EC2 setup, and Dask allowed it to
+become a problem.
 
 ## Technology that we use around Dask
-[PyTorch], my favorite deep learning library. We also used
-some algorithm-specific software around PyTorch, including a
-parameter server to manage estimates produced by 
-machine learning between machines.
+[PyTorch], my favorite deep learning library.
 
 [paper]:https://arxiv.org/abs/1806.04090
 [a blog post]:https://stsievert.com/blog/2018/01/04/dask-get-client/
