@@ -4,7 +4,7 @@ Template
 Who am I?
 ---------
 
-A brief description of you you are, and the name of the project for which you
+A brief description of who you are, and the name of the project for which you
 use Dask.
 
 
@@ -61,4 +61,4 @@ Links
 Links throughout the document are good.  You may want to list them again here.
 This might be links to your company or project, links to blogposts or notebooks
 that you've written about the topic, or links to relevant source code.
-Anything that someone was intersted in your story could use to learn more.
+Anything that someone who was interested in your story could use to learn more.
