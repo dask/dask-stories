@@ -13,6 +13,7 @@ This page shares stories from other Dask users.
    pangeo.md
    hydrologic-modeling.md
    network-modeling.md
+   satellite-imagery.md
 
 Contributing
 ------------
