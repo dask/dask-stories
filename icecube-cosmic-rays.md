@@ -30,8 +30,8 @@ How Dask Helps us
 -----------------
 
 I originally chose to use Dask because of the
-[Dask Array](http://dask.pydata.org/en/latest/array.html) and
-[Dask Dataframe](http://dask.pydata.org/en/latest/dataframe.html) data
+[Dask Array](https://dask.org/en/latest/array.html) and
+[Dask Dataframe](https://dask.org/en/latest/dataframe.html) data
 structures. I use Dask Dataframe to load thousands of
 [HDF](https://www.hdfgroup.org/) files and then apply further feature
 engineering and filtering data preprocessing steps. The final dataset can be
@@ -40,7 +40,7 @@ being able to easily distribute this load while still using the familiar
 pandas API has become invaluable in my research.
 
 Later I discovered the
-[Dask delayed](http://dask.pydata.org/en/latest/delayed.html) iterface and now
+[Dask delayed](https://dask.org/en/latest/delayed.html) iterface and now
 use it to parallelize code that doesn't easily conform to the Dask Array or
 Dask Dataframe use cases. For example, I often need to perform thousands of
 independent calculations for the pixels in a HEALPix sky map. I've found Dask
@@ -48,7 +48,7 @@ delayed to be really useful for parallelizing these types of embarrassingly
 parallel calculations with minimal hassle.
 
 I also use several of the
-[diagnostic tools](http://dask.pydata.org/en/latest/diagnostics-local.html)
+[diagnostic tools](https://dask.org/en/latest/diagnostics-local.html)
 Dask offers such as the progress bar and resource profiler. Working in a large
 collaboration with shared computing resources, it's great to be able to
 monitor how many resources I'm using and scale back or scale up accordingly.
@@ -75,5 +75,5 @@ We store our data in HDF files, which Dask has nice read and write support
 for. We also use several other Python data stack tools like Jupyter,
 scikit-learn, matplotlib, seaborn, etc. Recently, we've started experimenting
 with using HTCondor and the
-[Dask distributed scheduler](https://distributed.readthedocs.io/en/latest/) to
+[Dask distributed scheduler](https://distributed.dask.org/en/latest/) to
 scale up to using hundreds of workers on a cluster.

@@ -110,8 +110,8 @@ Technology around Dask
 ----------------------
 
 [Xarray](https://xarray.pydata.org) is the main way we interact with Dask. We use the
-[`dask-jobqueque`](https://dask-jobqueue.readthedocs.io) and
-[`dask-kubernetes`](https://dask-kubernetes.readthedocs.io) projects heavily.
+[`dask-jobqueque`](https://jobqueue.dask.org) and
+[`dask-kubernetes`](https://kubernetes.dask.org) projects heavily.
 
 We also use [Zarr](http://zarr.readthedocs.io) extensively for storage,
 especially on the cloud, where we also employ

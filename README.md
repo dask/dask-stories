@@ -199,7 +199,7 @@ looking at moving over to TIFF or Zarr.  We've also just started looking at
 XArray, which has good Dask support and seems to have a strong community.
 
 For cluster deployment we use PBS and the
-[dask-jobqueue](https://dask-jobqueue.readthedocs.io) project locally, though
+[dask-jobqueue](https://jobqueue.dask.org) project locally, though
 we're starting to look at storing data on AWS and using the [Dask-Helm
-chart](http://dask.pydata.org/en/latest/setup/kubernetes-helm.html) or
-[dask-kubernetes](https://dask-kubernetes.readthedocs.io)
+chart](https://dask.org/en/latest/setup/kubernetes-helm.html) or
+[dask-kubernetes](https://kubernetes.dask.org)
