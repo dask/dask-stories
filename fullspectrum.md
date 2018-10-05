@@ -27,7 +27,7 @@ Dask is instrumental in my work for creating efficient cashflow model
 management systems and general data science enablement on data lakes.
 
 Dask provides a way to construct the dependencies of cashflow equations as a
-DAG (using the [dask.delayed](https://dask.org/en/latest/delayed.html)
+DAG (using the [dask.delayed](https://docs.dask.org/en/latest/delayed.html)
 interface) and provides a good developer experience for building
 scoring/gamification/model tracking applications.
 
