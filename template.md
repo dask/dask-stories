@@ -58,7 +58,12 @@ make your own.
 Links
 -----
 
-Links throughout the document are good.  You may want to list them again here.
-This might be links to your company or project, links to blogposts or notebooks
-that you've written about the topic, or links to relevant source code.
-Anything that someone who was interested in your story could use to learn more.
+Links and images throughout the document are great.  You may want to list links
+again here.  This might be links to your company or project, links to blogposts
+or notebooks that you've written about the topic, or links to relevant source
+code.  Anything that someone who was interested in your story could use to
+learn more.
+
+We also strongly encourage you to include images.  These might be output
+results from your analyses, diagrams showing your architecture, or anything
+that helps to convey who your group is, and the kind of work that you're doing.
