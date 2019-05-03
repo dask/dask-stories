@@ -5,9 +5,8 @@ Who am I?
 ---------
 
 I am [Chris White](http://github.com/cicdw); after getting my Ph.D. in Math at 
-UT-Austin, I transitioned to data science with an emphasis on data science tooling.  
-I now work as the Tech Lead at [Prefect](https://www.prefect.io), a company building
-the next generation of workflow automation platforms for data engineers and data
+UT-Austin, I transitioned to data science with an emphasis on data science tooling.  I now work as the Tech Lead 
+at [Prefect](https://www.prefect.io), a company building the next generation of workflow automation platforms for data engineers and data
 scientists.  In this role, I am the core developer of our [open source engine](https://github.com/PrefectHQ/prefect)
 which allows users to build, schedule and execute robust workflows.
 
@@ -44,8 +43,7 @@ How Dask helps
 
 Prefect was designed and built with Dask in mind.  Historically, workflow systems
 such as [Airflow](https://airflow.apache.org/) handled _all_ scheduling, of both
-workflows _and_ the individual tasks contained within the workflows.  
-This pattern introduces a number of problems:
+workflows _and_ the individual tasks contained within the workflows. This pattern introduces a number of problems:
 - this puts an enormous burden on the central scheduler (it is scheduling _every single action_ taken in the system)
 - it adds non-trivial latency to task runs
 - in practice, this limits the amount of dynamicism workflows can have
@@ -75,14 +73,14 @@ twice, we proceed to compute `x -> x + 1 -> x + 2` for each element of our list.
 these computations proceed asychronously, meaning that the final computation of each branch
 can begin without waiting on the other middle computations, as in this schematic:
 
-![depth-first.png]
+![Depth First Execution](depth-first.png)
 
 However, in Prefect, we aren't simply passing around Dask futures created from a single `Client` - when a [`map` operation](https://docs.prefect.io/guide/core_concepts/mapping.html#prefect-approach) occurs, the dask futures are actually created by a `worker_client` and attached to a Prefect `State` object.
 *Ideally*, we would leave these futures unresolved at this stage so that computation can proceed as above.  However, because 
 it is non-trivial to share futures between clients we must `gather` the futures with this same client, making
 our computation proceed in a "breadth-first" manner: 
 
-![breadth-first.png]
+![Breadth first execution](breadth-first.png)
 
 This isn't the worst thing, but for longer pipelines it would be very nice to have the faster branches
 of the pipeline proceed with execution so that final results are produced earlier for inspection.
