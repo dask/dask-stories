@@ -100,4 +100,4 @@ Links
 
 - [Prefect Repo](https://github.com/PrefectHQ/prefect)
 - [Prefect on Dask Example](https://docs.prefect.io/guide/tutorials/dask-cluster.html)
-- [Dask-Kubernetes](https://github.com/dask/dask-kubernetes)
+- [Dask-Kubernetes](https://kubernetes.dask.org)
