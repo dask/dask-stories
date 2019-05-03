@@ -1,4 +1,4 @@
-Prefect: Production Pipelines
+Prefect: Production Workflows
 ============================
 
 Who am I?
