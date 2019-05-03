@@ -4,8 +4,7 @@ Prefect: Production Workflows
 Who am I?
 ---------
 
-I am [Chris White](http://github.com/cicdw); after getting my Ph.D. in Math at 
-UT-Austin, I transitioned to data science with an emphasis on data science tooling.  I now work as the Tech Lead 
+I am [Chris White](http://github.com/cicdw); I am the Tech Lead 
 at [Prefect](https://www.prefect.io), a company building the next generation of workflow automation platforms for data engineers and data
 scientists.  In this role, I am the core developer of our [open source engine](https://github.com/PrefectHQ/prefect)
 which allows users to build, schedule and execute robust workflows.
@@ -30,8 +29,9 @@ among many other things.  We at Prefect like to think of a workflow system as
 a technical insurance policy - you shouldn't really notice it much when 
 things are going well, but it should be maximally useful when things go wrong.
 
-Prefect's goal is to build the next generation workflow system.  [Old systems
-are limited by their model of workflows](https://medium.com/the-prefect-blog/why-not-airflow-4cfa423299c4) as slow-moving, regularly scheduled,
+Prefect's goal is to build the next generation workflow system.  Older systems
+such as [Airflow](https://medium.com/the-prefect-blog/why-not-airflow-4cfa423299c4) and Luigi are limited 
+by their model of workflows as slow-moving, regularly scheduled,
 with limited inter-task communication.  Prefect, on the other hand, embraces
 this new reality and makes very few assumptions about the nature and requirements of
 workflows, thereby supporting more dynamic use cases in both data engineering
@@ -51,7 +51,7 @@ workflows _and_ the individual tasks contained within the workflows. This patter
 - it requires users to have an external scheduler service running to run their workflows at all!
 
 Instead, Prefect handles the scheduling of _workflows_, and lets Dask
-handle the scheduling and resource management of tasks within each workflow.  This
+handle the scheduling and resource management of _tasks_ within each workflow.  This
 provides a number of benefits out of the box:
 
 - **Task scheduling:** Dask handles all task scheduling within a workflow, allowing Prefect to incentivize smaller tasks which Dask schedules with millisecond latency
