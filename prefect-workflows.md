@@ -59,9 +59,10 @@ provides a number of benefits out of the box:
 - **Distributed computation:** Dask handles allocating Tasks to workers in a cluster, allowing users to immediately realize the benefits of distributed computation with minimal overhead
 - **Parallelism:** whether running in a cluster or locally, Dask provides parallel Task execution off the shelf
 
+The Dask interface is [surprisingly lean and simple to use](https://docs.dask.org/en/latest/futures.html), allowing for easy maintenance. 
+
 Additionally, because Dask is written in pure Python and has an active open source community,
 we can very easily get feedback on possible bugs, and even contribute to improving the software ourselves.
-
 
 Pain points when using Dask
 ---------------------------
