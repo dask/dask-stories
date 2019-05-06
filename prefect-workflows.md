@@ -85,7 +85,7 @@ our computation proceed in a "breadth-first" manner:
 This isn't the worst thing, but for longer pipelines it would be very nice to have the faster branches
 of the pipeline proceed with execution so that final results are produced earlier for inspection.
 
-Technology I use around Dask
+Technology we use around Dask
 ----------------------------
 
 Our preferred deployment of Prefect Flows uses [dask-kubernetes](https://github.com/dask/dask-kubernetes)
