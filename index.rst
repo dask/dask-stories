@@ -14,6 +14,7 @@ This page shares stories from other Dask users.
    hydrologic-modeling.md
    network-modeling.md
    satellite-imagery.md
+   prefect-workflows.md
 
 Contributing
 ------------
