@@ -4,7 +4,7 @@ Prefect: Production Workflows
 Who am I?
 ---------
 
-I am [Chris White](http://github.com/cicdw); I am the Tech Lead 
+I am [Chris White](http://github.com/cicdw); I am the CTO
 at [Prefect](https://www.prefect.io), a company building the next generation of workflow automation platforms for data engineers and data
 scientists.  In this role, I am the core developer of our [open source engine](https://github.com/PrefectHQ/prefect)
 which allows users to build, schedule and execute robust workflows.
@@ -87,6 +87,8 @@ our computation proceed in a "breadth-first" manner:
 This isn't the worst thing, but for longer pipelines it would be very nice to have the faster branches
 of the pipeline proceed with execution so that final results are produced earlier for inspection.
 
+**Update**: [As of Prefect 0.12.0](https://medium.com/the-prefect-blog/map-faster-mapping-improvements-in-prefect-0-12-0-7cacc3f14e16), Prefect now supports Depth First Execution when running on Dask.
+
 Technology we use around Dask
 ----------------------------
 
@@ -103,3 +105,4 @@ Links
 - [Prefect Repo](https://github.com/PrefectHQ/prefect)
 - [Prefect on Dask Example](https://docs.prefect.io/guide/tutorials/dask-cluster.html)
 - [Dask-Kubernetes](https://kubernetes.dask.org)
+- [Blog post on some Prefect / Dask improvements](https://medium.com/the-prefect-blog/map-faster-mapping-improvements-in-prefect-0-12-0-7cacc3f14e16)
