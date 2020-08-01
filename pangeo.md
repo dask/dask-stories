@@ -8,7 +8,7 @@ I am [Ryan Abernathey](http://rabernat.github.io), a physical oceanographer and
 professor at [Columbia University](http://columbia.edu) /
 [Lamont Doherty Earth Observatory](http://ldeo.columbia.edu).
 
-I am a founding member of the [Pangeo Project](http://pangeo-data.org), an
+I am a founding member of the [Pangeo Project](http://pangeo.io), an
 initiative aimed at coordinating and supporting the development of open source
 software for the analysis of very large geoscientific datasets such as
 satellite observations or climate simulation outputs.  Pangeo is funded by
