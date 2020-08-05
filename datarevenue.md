@@ -36,4 +36,5 @@ We run Dask on Kubernetes on AWS, with batch processing managed by [Luigi](https
 We use Dask in many of our projects, from smaller ones all the way up to our largest integrations (for example with Daimler) and we have been impressed with how versatile it is. We process several billion records, amounting to many terabytes of data, through Dask every day.
 
 ## Links
+- [Scaling Pandas: Comparing Dask, Ray, Modin, Vaex, and RAPIDS](https://www.datarevenue.com/en-blog/pandas-vs-dask-vs-vaex-vs-modin-vs-rapids-vs-ray)
 - [How to Scale your Machine Learning Pipeline with Dask](https://www.datarevenue.com/en-blog/how-to-scale-your-machine-learning-pipeline)
