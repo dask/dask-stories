@@ -10,7 +10,7 @@ We are analysing thousands of blood samples, comparing sick and healthy patients
 Currently, this is done offline, on historical samples, but with more work this could be used in real-time too: to analyse patients' blood and give them feedback faster and more cheaply than is currently possible.
 
 ## How does Dask help?
-We started the project without Dask, writing our own custom multiprocessing functionality. This was a burden to maintain, and Dask made it simple to switch over to thinking at a distributed acyclic graph (DAG) level. It was great to stop thinking about individual cores.
+We started the project without Dask, writing our own custom multiprocessing functionality. This was a burden to maintain, and Dask made it simple to switch over to thinking at a directed acyclic graph (DAG) level. It was great to stop thinking about individual cores.
 
 Dask has allowed us to run all of our analysis in parallel, shortening the overall feedback loop and letting us get results faster.
 We've found Dask to be extremely flexible. We have used it extensively to help with our distributed analysis, but Dask adds value for us in simpler cases too. We have systems which revolve around user-submitted jobs, and we can use Dask to help schedule these, whether or not 'big data' is involved.
