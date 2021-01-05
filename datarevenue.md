@@ -20,6 +20,7 @@ After it became clear that we were wasting significant time maintaining our cust
 -   [Apache Flink](https://flink.apache.org/): we found this not only lacking some functionality that we needed, but also very complex to set up and maintain.
 -   [Apache Spark](https://spark.apache.org/): we similarly found this to be a time sink in terms of set up and maintenance.
 -   [Apache Hadoop](https://hadoop.apache.org/): we found the MapReduce framework too restrictive, and it felt like we were always pushing round pegs into square holes.
+
 Ultimately, we chose Dask because it offered a great balance of simplicity and power. It is flexible enough to let us do nearly everything we need, but simple enough to not put a maintenance burden on our team.
 We use the Dask scheduler along with the higher level APIs. Our data fits well into a table structure, so the DataFrame API provides a lot of value for us.
 
