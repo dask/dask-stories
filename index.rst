@@ -18,6 +18,7 @@ that Dask can serve them beyond their original intent.
    network-modeling.md
    satellite-imagery.md
    prefect-workflows.md
+   datarevenue.md
 
 Overview
 --------

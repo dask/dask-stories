@@ -1,4 +1,5 @@
-# Discovering biomarkers for rare diseases in blood samples
+Discovering biomarkers for rare diseases in blood samples
+=========================================================
 
 ![Using Dask for biomarker discovery](dask-datarevenue.png)
 
