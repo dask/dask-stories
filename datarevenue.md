@@ -1,7 +1,7 @@
 Discovering biomarkers for rare diseases in blood samples
 =========================================================
 
-![Using Dask for biomarker discovery](dask-datarevenue.png)
+![](dask-datarevenue.png)
 
 ## Who am I?
 I am Markus Schmitt and I am CEO at [Data Revenue](https://www.datarevenue.com/). We build custom machine learning solutions in a number of fields, including everything from medicine to car manufacturing.
