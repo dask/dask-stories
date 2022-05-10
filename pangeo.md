@@ -1,12 +1,6 @@
 Pangeo: Earth Science
 =====================
 
-Copyright and License
----------------------
-
-Copyright 2020 Ryan Abernathey. I license this work under a [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.
-
-
 Who Am I?
 ---------
 
@@ -124,3 +118,8 @@ especially on the cloud, where we also employ
 [`gcsfs`](https://gcsfs.readthedocs.io) and
 [`s3fs`](https://s3fs.readthedocs.io) to interface with cloud storage.
 
+
+Copyright and License
+---------------------
+
+Copyright 2020 Ryan Abernathey. I license this work under a [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.
